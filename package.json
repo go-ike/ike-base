@@ -1,0 +1,32 @@
+{
+  "name": "ike-base",
+  "version": "1.0.0",
+  "description": "The bae project for Ike",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/go-ike/ike-base.git"
+  },
+  "author": "Mateus Pinheiro <mateus.pinheiro@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "app-module-path": "^2.1.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.5",
+    "nunjucks": "^2.5.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-watch": "^4.3.10",
+    "intern": "^3.3.1",
+    "morph-css": "^1.0.1",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2"
+  }
+}
