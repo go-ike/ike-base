@@ -1,8 +1,10 @@
-const gulp    = require('gulp');
-const concat  = require('gulp-concat');
-const postcss = require('gulp-postcss');
-const watch   = require('gulp-watch');
-const batch   = require('gulp-batch');
+const gulp       = require('gulp');
+const concat     = require('gulp-concat');
+const postcss    = require('gulp-postcss');
+const watch      = require('gulp-watch');
+const batch      = require('gulp-batch');
+const browserify = require('browserify');
+const source     = require('vinyl-source-stream');
 
 /**
  * Builds all assets for production
@@ -69,5 +71,18 @@ gulp.task('css', () => {
 		.src(cssFiles)
 		.pipe(postcss(postcssProcessors))
 		.pipe(concat('application.css'))
+		.pipe(gulp.dest('./public'));
+});
+
+gulp.task('browserify', () => {
+	const browserifyOptions = {
+		paths: [
+			'./node_modules/'
+		]
+	};
+
+	return browserify('./app/assets/scripts/application.js', browserifyOptions)
+		.bundle()
+		.pipe(source('application.js'))
 		.pipe(gulp.dest('./public'));
 });
