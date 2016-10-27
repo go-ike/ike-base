@@ -17,7 +17,8 @@
     "express": "^4.14.0",
     "mongoose": "^4.6.5",
     "nunjucks": "^2.5.2",
-    "turbolinks": "^5.0.0"
+    "turbolinks": "^5.0.0",
+    "yamler": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "^13.1.1",
