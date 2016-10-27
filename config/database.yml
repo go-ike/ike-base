@@ -1,7 +1,5 @@
 deafault: &default
-	adapter: mongoose
-
-  # Mongoose options <http://mongoosejs.com/docs/connections.html>
+  adapter: mongoose
   options:
     db:
       native_parser: true
