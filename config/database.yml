@@ -9,11 +9,14 @@ deafault: &default
 production:
   <<: *default
   uri: {{ process.env.MONGODB_URI }}
+  name: sample
 
 development:
   <<: *default
-  uri: mongodb://localhost/sample
+  uri: mongodb://localhost/
+  name: sample_dev
 
 test:
   <<: *default
-  uri: mongodb://localhost/sample
+  uri: mongodb://localhost/
+  name: sample_test
