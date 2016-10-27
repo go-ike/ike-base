@@ -1,3 +1,21 @@
+/**
+ * This is a MANIFEST file. This is the first css file
+ * processed, so any rule here will be on the top of the css file.
+ *
+ * @import rules will look into node_modules
+ *
+ * All .css files that are not preceeded with an underscore
+ * will be automatically bundled.
+ *
+ * Example auto bundled files:
+ * app/assets/styles/my-component.css
+ * app/views/feature/feature.css
+ *
+ * Files which will not be auto bundled, but can be imported
+ * app/assets/_component.css
+ * app/views/features/_feature-part.css
+ */
+
 body {
 	background: #eaeaea;
 	color: blue;
