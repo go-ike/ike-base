@@ -1,3 +1,7 @@
+/**
+ * SAMPLE
+ * Model description
+ */
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;

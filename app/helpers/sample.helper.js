@@ -1,3 +1,7 @@
+/**
+ * SAMPLE
+ * Helper description
+ */
 
 class SampleHelper {
 	constructor() {}

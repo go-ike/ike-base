@@ -1,6 +1,6 @@
 /**
  * This is a MANIFEST file. This is the first css file
- * processed, so any rule here will be on the top of the css file.
+ * processed, so any rule here will be on the top of the bundle.
  *
  * @import rules will look into node_modules
  *
@@ -15,8 +15,3 @@
  * app/assets/_component.css
  * app/views/features/_feature-part.css
  */
-
-body {
-	background: #eaeaea;
-	color: blue;
-}

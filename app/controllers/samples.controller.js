@@ -1,12 +1,11 @@
-
-const Sample = require('sample.model');
+/**
+ * SAMPLES
+ * Controller description
+ */
 
 class SamplesController {
-	constructor() {}
-
 	index(req, res) {
 		let data = {};
-		data.sample = "Hello from controller";
 
 		res.render('sample/index', data);
 	}
