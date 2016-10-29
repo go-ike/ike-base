@@ -1,5 +1,5 @@
 /**
- * ENVIRONMENTS/PRODUCTION
+ * ENVIRONMENTS/TEST
  * Will boot when NODE_ENV is "test"
  */
 
