@@ -4,6 +4,7 @@
   "description": "The bae project for Ike",
   "main": "index.js",
   "scripts": {
+    "start": "./bin/start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "gulp-watch": "^4.3.10",
     "intern": "^3.3.1",
     "morph-css": "^1.0.1",
+    "nodemon": "^1.11.0",
     "postcss-cssnext": "^2.8.0",
     "postcss-import": "^8.1.2",
     "require-dir": "^0.3.1",
