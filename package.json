@@ -2,7 +2,7 @@
   "name": "ike-base",
   "version": "1.0.0",
   "description": "The bae project for Ike",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "./bin/start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
