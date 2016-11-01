@@ -7,7 +7,7 @@ const express = require('express');
 const r       = express.Router();
 
 // Samples
-let SamplesController = new (require('samples.controller'))();
+let SamplesController = newApprequire('controllers/samples.controller');
 r.get('/samples', SamplesController.index);
 
 module.exports = r;

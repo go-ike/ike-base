@@ -9,8 +9,14 @@
  * relative path.
  *
  * This will work, anywhere on the app.
- * const controller = require('samples.controller');
+ * const controller = apprequire('controller/samples');
+ *
+ * To return a new instance without params, you can
+ * const controller = newApprequire('controller/samples');
  */
+global.apprequire = function(fileName) { return require(__dirname + '/app/' + fileName)};
+global.newApprequire = function(fileName) { return new (require(__dirname + '/app/' + fileName))() };
+
 require('app-module-path').addPath(__dirname + '/app/controllers');
 require('app-module-path').addPath(__dirname + '/app/models');
 require('app-module-path').addPath(__dirname + '/app/helpers');
