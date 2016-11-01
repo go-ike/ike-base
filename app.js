@@ -17,10 +17,6 @@
 global.apprequire = function(fileName) { return require(__dirname + '/app/' + fileName)};
 global.newApprequire = function(fileName) { return new (require(__dirname + '/app/' + fileName))() };
 
-require('app-module-path').addPath(__dirname + '/app/controllers');
-require('app-module-path').addPath(__dirname + '/app/models');
-require('app-module-path').addPath(__dirname + '/app/helpers');
-
 /**
  * Boot the right environment based on NODE_ENV.
  */
